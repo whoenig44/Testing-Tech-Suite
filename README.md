@@ -24,16 +24,25 @@ To set up the application locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/coding-quiz.git
-    cd coding-quiz
+    git clone https://github.com:whoenig44/Testing-Tech-Suite.git
+    cd Testing-Tech-Suite
     ```
 
 2. Install dependencies:
     ```sh
     npm install
     ```
+3. Build the application:
+    ```sh
+    npm run build
+    ```
 
-3. Start the development server:
+4. Seed the Database:
+    ```sh
+    npm run seed
+    ```
+
+5. Start the development server:
     ```sh
     npm run start:dev
     ```
@@ -42,7 +51,7 @@ To set up the application locally, follow these steps:
 
 ## Testing
 
-The application uses Cypress for end-to-end testing and Vitest for unit testing. Cypress tests are located in the [cypress](http://_vscodecontentref_/0) directory, and Vitest tests are located in the `tests` directory.
+The application uses Cypress for end-to-end testing and Vitest for unit testing. Cypress tests are located in the cypress directory, and Vitest tests are located in the `tests` directory.
 
 ### Running Cypress Tests
 
@@ -53,13 +62,13 @@ To run Cypress tests, follow these steps:
     npx cypress open
     ```
 
-2. In the Cypress Test Runner window, click on the test file you want to run (e.g., [Quiz.cy.tsx](http://_vscodecontentref_/1)).
+2. In the Cypress Test Runner window, click on the test file you want to run (e.g., [Quiz.cy.tsx]).
 
 3. Cypress will execute the tests and display the results.
 
 ### Cypress Test Example
 
-Here is an example of a Cypress test for the [Quiz](http://_vscodecontentref_/2) component:
+Here is an example of a Cypress test for the Quiz component:
 
 ```typescript
 // filepath: /C:/Users/SoPro/bootcamp/homework/bootcamp-hw-19/Testing-Tech-Suite/cypress/component/Quiz.cy.tsx
