@@ -49,6 +49,9 @@ To set up the application locally, follow these steps:
 
 4. Open your browser and navigate to `http://localhost:3001` to view the application.
 
+## How-To Video (Setup and Testing)
+https://drive.google.com/file/d/1-1HNXXsV05z2U5gch4GoE9J03pM8Lhwp/view
+
 ## Testing
 
 The application uses Cypress for end-to-end testing and Vitest for unit testing. Cypress tests are located in the cypress directory, and Vitest tests are located in the `tests` directory.
