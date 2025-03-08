@@ -1,8 +1,11 @@
 import db from '../config/connection.js';
-import { Question } from '../models/index.js'
+import { Question } from '../models/index.js';
 import cleanDB from './cleanDb.js';
+import fs from 'fs';
+import path from 'path';
 
-import questionData from './pythonQuestions.json' assert{ type: 'json'};
+const questionDataPath = path.resolve('./src/seeds/pythonQuestions.json');
+const questionData = JSON.parse(fs.readFileSync(questionDataPath, 'utf-8'));
 
 try {
   await db();
